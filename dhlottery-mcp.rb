@@ -5,21 +5,21 @@
 class DhlotteryMcp < Formula
   desc "동행복권 로또 6/45 MCP 서버"
   homepage "https://github.com/Torres-09/dhlottery-mcp"
-  version "1.4.1"
+  version "1.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.1/dhlottery-mcp_darwin_amd64.tar.gz"
-      sha256 "66232f06a7f0f517ede867d1955149cab577e5e4eda2ae41030b837a5ff7633b"
+      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.2/dhlottery-mcp_darwin_amd64.tar.gz"
+      sha256 "1eef89d9a0fc8927321527418065bb8f84b0b2a02b22f4e3faeb06f06ac70611"
 
       define_method(:install) do
         bin.install "dhlottery-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.1/dhlottery-mcp_darwin_arm64.tar.gz"
-      sha256 "2c0cd259344d4ec7a62b61f395a7ac416ca234e6de8a6c1d39bec24cde64e8ab"
+      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.2/dhlottery-mcp_darwin_arm64.tar.gz"
+      sha256 "23f009e20257cce498c349e24d94ad9e9c6957ac59f8a0db9612c3263d12d37f"
 
       define_method(:install) do
         bin.install "dhlottery-mcp"
@@ -29,15 +29,15 @@ class DhlotteryMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.1/dhlottery-mcp_linux_amd64.tar.gz"
-      sha256 "3223dfa0a79ee7289b1f4810945da4143d2935e208cb748eb7c2957e69905d81"
+      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.2/dhlottery-mcp_linux_amd64.tar.gz"
+      sha256 "ca5f08d0d6dc864c7f88f251aea937e14bcbe7a389000bba9fd7eb21af66bdf9"
       define_method(:install) do
         bin.install "dhlottery-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.1/dhlottery-mcp_linux_arm64.tar.gz"
-      sha256 "168b765cc31a2550c6ab9a7cbd3142488ed54218f60505ae4c62c0c111e4d91e"
+      url "https://github.com/Torres-09/dhlottery-mcp/releases/download/v1.4.2/dhlottery-mcp_linux_arm64.tar.gz"
+      sha256 "df273aeb792c6a0789c76a146643216167e6b1748457d79252b3f8c884184dea"
       define_method(:install) do
         bin.install "dhlottery-mcp"
       end
